@@ -24,6 +24,9 @@ app.get('/status/:id', (req, res) => {
   }
   res.json(status);
 });
+app.get('/', (req, res) => {
+  res.send(' Server is Running!');
+});
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
